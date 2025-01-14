@@ -11,6 +11,7 @@
 }
 html {
   scroll-behavior: smooth;
+    overflow-x: auto;
 }
 
 * {
@@ -21,16 +22,14 @@ html {
 
 body {
   position: relative;
-  overflow-x: hidden;
   font-family: var(--font-family);
   background-color: var(--black-color);
   color: var(--text-color);
 }
 
 .navbar {
-  position: fixed;
+  position:sticky;
   height: 70px;
-  width: 100%;
   top: 0;
   z-index: 1;
   display: flex;
@@ -103,13 +102,13 @@ a:hover {
 .primary-headings {
   font-family: var(--font-family-header);
   position: absolute;
-  bottom:0;
+  bottom: 0;
   font-size: 4rem;
   word-spacing: 10px;
 }
 .main-btn {
   position: absolute;
-  bottom:1rem;
+  bottom: 1rem;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -132,7 +131,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10rem  0;
+  margin: 10rem 0;
 }
 .img_container {
   width: 45vw;
@@ -427,13 +426,12 @@ footer ul li a:hover {
     width: 30px;
     height: 30px;
   }
-   .product_container {
+  .product_container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 660px) {
-
   .menu li {
     margin-left: 10px;
   }
@@ -459,7 +457,6 @@ footer ul li a:hover {
   .title-product {
     font-size: 3rem;
   }
- 
 }
 
 @media only screen and (max-width: 570px) {
