@@ -11,7 +11,6 @@
 }
 html {
   scroll-behavior: smooth;
-    overflow-x: auto;
 }
 
 * {
@@ -28,7 +27,7 @@ body {
 }
 
 .navbar {
-  position:sticky;
+  position: sticky;
   height: 70px;
   top: 0;
   z-index: 1;
@@ -333,7 +332,7 @@ footer ul li a:hover {
   border-bottom: 3px solid var(--main-color);
 }
 .line_footer {
-  width: 35vw;
+  width: 27%;
   height: 2px;
   background-color: var(--main-color);
 }
@@ -351,6 +350,7 @@ footer ul li a:hover {
   color: var(--black-color);
 }
 .first_line {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -472,15 +472,15 @@ footer ul li a:hover {
     font-size: 2rem;
   }
   .menu.sidebar {
+    display: flex;
     border-radius: 10px;
     margin-top: 25px;
-    position: fixed;
+    position: absolute;
     right: 0;
-    top: 0;
-    height: 100%;
+    top: 2rem;
     width: 45%;
     background-color: #333;
-    display: block;
+    flex-direction: column;
   }
   .menu.menu.sidebar li {
     margin-left: 10px;
